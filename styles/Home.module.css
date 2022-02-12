@@ -33,6 +33,11 @@
   text-decoration: none;
 }
 
+#title2 a {
+  color: #000000;
+  text-decoration: none;
+}
+
 .title a:hover,
 .title a:focus,
 .title a:active {
@@ -46,12 +51,19 @@
 }
 
 .title,
-.description {
+.description,
+.search {
   text-align: center;
 }
 
 .description {
   margin: 4rem 0;
+  line-height: 1.5;
+  font-size: 1.5rem;
+}
+
+.search {
+  margin: 1rem;
   line-height: 1.5;
   font-size: 1.5rem;
 }
@@ -82,14 +94,7 @@
   border: 1px solid #eaeaea;
   border-radius: 10px;
   transition: color 0.15s ease, border-color 0.15s ease;
-  max-width: 300px;
-}
-
-.card:hover,
-.card:focus,
-.card:active {
-  color: #0070f3;
-  border-color: #0070f3;
+  max-width: 500px;
 }
 
 .card h2 {
@@ -106,6 +111,24 @@
 .logo {
   height: 1em;
   margin-left: 0.5rem;
+}
+
+.gobutton {
+  align-items: center;
+  justify-content: center;
+  width: 5rem;
+  margin: 1rem;
+  border-radius: 5px;
+  padding: 0.75rem;
+  font-size: 1.1rem;
+}
+
+.gobutton:hover,
+.gobutton:focus,
+.gobutton:active {
+  background: #0070f3;
+  color: #ffffff;
+  text-decoration: underline;
 }
 
 @media (max-width: 600px) {
