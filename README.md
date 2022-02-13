@@ -30,3 +30,11 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 ## Vercel Deployment
 
 This app is also deployed on Vercel at [https://pokedex-bryanweecw.vercel.app](https://pokedex-bryanweecw.vercel.app)
+
+## Feeling Bored?
+
+Clicking "Search" in the "Search for a Pokemon" component takes you to Darth Vader.
+
+Clicking "Bryan's Pokedex" rickrolls you.
+
+Clicking "take me home" on the 404 page does what it's supposed to, namely, links you back to the front page. But! "Country Roads" leads you down a more musical route, and "404 - Page not Found" expresses disappointment at our sad state of affairs with a sad trombone sound.
