@@ -19,6 +19,7 @@ export default function Search() {
         <a
           href="https://www.youtube.com/watch?v=aFTyJDjfjG0&ab_channel=JoeRally"
           target="_blank"
+          rel="noreferrer"
         >
           Search
         </a>{" "}

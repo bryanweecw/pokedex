@@ -2,6 +2,7 @@ import { useRouter } from "next/router";
 import styles from "../../styles/Home.module.css";
 import Head from "next/head";
 import Search from "../../components/Search";
+import Link from "next/link";
 
 export async function getStaticPaths() {
   //set up static path rendering
@@ -66,9 +67,9 @@ const PokemonInfo = ({ pokedata, pokedata2 }) => {
             {pokedata.is_legendary.toString()}
           </p>
           <div style={{ paddingTop: 10 }}>
-            <a href="/" style={{ color: "blue" }}>
-              Back to front page
-            </a>
+            <Link href="/">
+              <a style={{ color: "blue" }}>Back to front page</a>
+            </Link>
           </div>
         </div>
       </div>
