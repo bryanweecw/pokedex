@@ -80,14 +80,14 @@ const PokemonInfo = ({ pokedata, pokedata2 }) => {
 export default PokemonInfo;
 
 export async function getStaticProps({ params }) {
-  const request = await fetch(
-    `http://pokeapi.co/api/v2/pokemon-species/${params.pokename}`
-  );
   const request2 = await fetch(
     `http://pokeapi.co/api/v2/pokemon/${params.pokename}`
   );
-  const pokedata = await request.json();
   const pokedata2 = await request2.json();
+  const request = await fetch(
+    `http://pokeapi.co/api/v2/pokemon-species/${pokedata2.species.name}`
+  );
+  const pokedata = await request.json();
 
   return {
     props: { pokedata, pokedata2 },
