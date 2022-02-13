@@ -14,7 +14,11 @@ export default function Home() {
       <main className={styles.main}>
         <h1 className={styles.title}>
           Welcome to{" "}
-          <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
+          <a
+            href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+            target="_blank"
+            rel="noreferrer"
+          >
             Bryan's Pokedex!
           </a>
         </h1>
