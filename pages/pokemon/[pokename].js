@@ -25,7 +25,7 @@ const PokemonInfo = ({ pokedata, pokedata2 }) => {
   const router = useRouter();
   let habitat = "";
   // const { pokename } = router.query;
-  if (typeof pokedata.habitat !== "object" || {}) {
+  if (typeof pokedata.habitat === "object" && !pokedata.habitat) {
     //check that pokedata.habitat is not an empty object, or null
     habitat = "null";
   } else habitat = pokedata.habitat.name.toString();
